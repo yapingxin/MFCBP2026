@@ -1,5 +1,5 @@
-Example: Basic Sphinx project for Read the Docs
-===============================================
+MFC Best Practice 2026: MFC编程最佳实践（2026版）
+=================================================
 
 .. image:: https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest
     :target: https://example-sphinx-basic.readthedocs.io/en/latest/?badge=latest
