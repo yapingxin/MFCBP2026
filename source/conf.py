@@ -17,7 +17,7 @@ release = '2026.01'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark',
+extensions = [
   'sphinx.ext.autosectionlabel'
 ]
 
