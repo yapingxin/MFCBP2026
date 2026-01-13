@@ -18,8 +18,7 @@ release = '2026.01'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['recommonmark',
-  'sphinx_markdown_tables',
-  'sphinx.ext.autosectionlabel',
+  'sphinx.ext.autosectionlabel'
 ]
 
 templates_path = ['_templates']
