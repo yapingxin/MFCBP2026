@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'MFC编程最佳实践(2026版)'
-copyright = '2026, 北京星际防务科技有限公司'
+copyright = '2026, 辛亚平'
 author = '辛亚平'
 release = '2026.01'
 
