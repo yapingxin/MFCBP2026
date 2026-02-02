@@ -16,7 +16,7 @@ MFC编程最佳实践(2026版)
    framework-platform/os-compatibility.rst
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 建立一个典型的基于对话框的MFC程序
    :numbered:
    
