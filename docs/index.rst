@@ -19,3 +19,5 @@ MFC编程最佳实践(2026版)
    :maxdepth: 1
    :caption: 建立一个典型的基于对话框的MFC程序
    :numbered:
+   
+   dialog-mfc-tutorial/create-dialog-mfcutil.rst
