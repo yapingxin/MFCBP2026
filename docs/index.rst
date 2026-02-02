@@ -15,3 +15,4 @@ MFC编程最佳实践(2026版)
    
    framework-platform/index.rst
    dialog-mfc-tutorial/index.rst
+
