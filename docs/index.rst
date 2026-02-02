@@ -22,3 +22,5 @@ MFC编程最佳实践(2026版)
    
    dialog-mfc-tutorial/create-dialog-mfcutil.rst
    dialog-mfc-tutorial/add-logging-system.rst
+   dialog-mfc-tutorial/add-status-bar.rst
+   dialog-mfc-tutorial/util-exit-mechanism.rst
