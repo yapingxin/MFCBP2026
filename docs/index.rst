@@ -9,11 +9,11 @@ MFC编程最佳实践(2026版)
 =====================================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: 平台与框架
+   :maxdepth: 2
+   :caption: 目录
    :numbered:
    
-   framework-platform/os-compatibility.rst
+   framework-platform/index.rst
 
 .. toctree::
    :maxdepth: 1
