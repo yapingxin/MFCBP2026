@@ -19,4 +19,3 @@
    sub-windows-switch.rst
    EventMessage.rst
    MessageBoard.rst
-

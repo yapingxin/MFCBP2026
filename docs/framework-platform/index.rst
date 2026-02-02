@@ -7,4 +7,3 @@
    :numbered:
    
    os-compatibility.rst
-
