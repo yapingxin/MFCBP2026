@@ -21,3 +21,4 @@ MFC编程最佳实践(2026版)
    :numbered:
    
    dialog-mfc-tutorial/create-dialog-mfcutil.rst
+   dialog-mfc-tutorial/add-logging-system.rst
