@@ -29,3 +29,5 @@ MFC编程最佳实践(2026版)
    dialog-mfc-tutorial/dialog-class-template.rst
    dialog-mfc-tutorial/mvc-framework-essential.rst
    dialog-mfc-tutorial/sub-windows-switch.rst
+   dialog-mfc-tutorial/EventMessage.rst
+   dialog-mfc-tutorial/MessageBoard.rst
