@@ -426,7 +426,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 
 在有些技术文章中，是这样建议的：在一台同样操作系统的计算机上，安装 Visual Studio 开发环境进行 MFC 程序开发，作为开发环境。这样，开发环境的系统中就会有运行 MFC 程序所需的全部动态链接库。如果运行环境中缺少哪些动态链接库，就直接从开发环境中拷贝到运行环境中，就能解决 MFC 程序运行时缺少一些动态链接库的问题。
 
-我并不打算采取从开发环境中拷贝动态链接库这个办法。所以我在 `dll-files.com <https://www.dll-files.com/>`_ 这个网站上搜索，找到了 mfc140ud.dll 的不同版本，如 :numref:`fig_osc_LookFor_mfc140ud-dll` 所示。
+我并不打算采取从开发环境中拷贝动态链接库这个办法，而是在 `dll-files.com <https://www.dll-files.com/>`_ 这个网站上搜索，找到了 mfc140ud.dll 的不同版本，如 :numref:`fig_osc_LookFor_mfc140ud-dll` 所示。
 
 .. figure:: Resource/Images/Snipaste_2026-01-12_05-21-46.png
     :name: fig_osc_LookFor_mfc140ud-dll
