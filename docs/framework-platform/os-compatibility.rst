@@ -405,7 +405,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 
 :numref:`fig_osc_Win7SP1_AfterVCRedist_DebugUtilFail` 中，Debug 版示范程序启动失败，报“缺少 mfc140ud.dll”的系统错误信息。报错信息为：
 
-    The program can't start because mfc140ud.dll is missing from your computer. Try reinstalling the program to fix this problem.
+.. error:: The program can't start because mfc140ud.dll is missing from your computer. Try reinstalling the program to fix this problem.
 
 简体中文版 Windows 7 Service Pack 1 虚拟机上，Debug 版示范程序启动失败，如 :numref:`fig_osc_Win7SP1CHS_RunSharedDebugUtil_Fail` 所示。
 
@@ -417,7 +417,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 
 如 :numref:`fig_osc_Win7SP1CHS_RunSharedDebugUtil_Fail` 所示，简体中文版的报错信息为：
 
-    无法启动此程序，因为计算机中丢失 mfc140ud.dll。尝试重新安装该程序以解决此问题。
+.. error:: 无法启动此程序，因为计算机中丢失 mfc140ud.dll。尝试重新安装该程序以解决此问题。
 
 对“缺少 mfc140ud.dll”问题的分析和探索
 ##########################################
@@ -458,7 +458,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 
 :numref:`fig_osc_missing_vcruntime140d_dll` 中的系统错误信息是：
 
-    The program can't start because VCRUNTIME140D.dll is missing from your computer. Try reinstalling the program to fix this problem.
+.. error:: The program can't start because VCRUNTIME140D.dll is missing from your computer. Try reinstalling the program to fix this problem.
 
 我们又继续在运行环境中补充了 vcruntime140d.dll、ucrtbased.dll 和 vcruntime140_1d.dll ，然后运行 Debug 版的示范程序。如 :numref:`fig_osc_missing_api_ms_win_xxx` 所示，程序启动依然出错。
 
