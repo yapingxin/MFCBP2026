@@ -343,7 +343,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 
 :numref:`fig_osc_Win7SP1ENU_RunSharedReleaseUtil_Fail` 中的报错信息为：
 
-    The program can't start because mfc140u.dll is missing from your computer. Try reinstalling the program to fix this problem.
+.. error:: The program can't start because mfc140u.dll is missing from your computer. Try reinstalling the program to fix this problem.
 
 简体中文版 Windows 7 Service Pack 1 虚拟机上，Release 版示范程序启动失败，如 :numref:`fig_osc_Win7SP1CHS_RunSharedReleaseUtil_Fail` 所示。
 
@@ -351,7 +351,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
     :name: fig_osc_Win7SP1CHS_RunSharedReleaseUtil_Fail
     :align: center
 
-    共享动态链接库 Release 版 MFC 示范程序程序在简体中文版 Win7SP1 虚拟机上运行出错
+.. error:: 共享动态链接库 Release 版 MFC 示范程序程序在简体中文版 Win7SP1 虚拟机上运行出错
 
 如 :numref:`fig_osc_Win7SP1CHS_RunSharedReleaseUtil_Fail` 所示，简体中文版的报错信息为：
 
