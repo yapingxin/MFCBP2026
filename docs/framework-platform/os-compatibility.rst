@@ -27,24 +27,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 开发环境
 ^^^^^^^^
 
-本文采用 Visual Studio 2026 在 Windows 10 Pro for Workstation 操作系统上开发示例程序。
-
-开发环境的操作系统版本信息如 :numref:`fig_osc_DevENV_OSInfo` 所示。
-
-.. figure:: Resource/Images/Snipaste_2026-01-09_14-21-47.png
-    :name: fig_osc_DevENV_OSInfo
-    :align: center
-
-    开发环境的操作系统版本信息
-
-开发环境的硬件信息如 :numref:`fig_osc_DevENV_HWInfo` 所示。
-
-.. figure:: Resource/Images/Snipaste_2026-01-09_14-24-15.png
-    :name: fig_osc_DevENV_HWInfo
-    :align: center
-
-    开发环境的硬件信息
-
+本文采用 Visual Studio 2026 在 Windows 10 操作系统上开发示例程序。
 
 很多人误以为必须使用老版本的 Visual Studio 来开发 MFC 程序以保证程序能在 Windows 7 上运行，为了破除这个观点，本文特地采用当前 [#f2]_ 最新版本的 VS：Visual Studio 2026，在写这篇文章之前，我特意把 Visual Studio 2026 升级到了最新版：18.1.1，如 :numref:`fig_osc_VS2026Version` 所示。
 
@@ -59,7 +42,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 运行环境
 ^^^^^^^^^^^^^^^^
 
-本文采用 VirtualBox 安装 Windows 7 虚拟机作为示例程序的运行环境。如 :numref:`fig_osc_PreInstalledSW` 所示，虚拟机安装操作系统后仅安装 Oracle VirtualBox Guest Additions 7.2.4 以便于虚拟机管理和操作。
+本文采用 VirtualBox 安装 Windows 7 虚拟机作为示例程序的运行环境。如 :numref:`fig_osc_PreInstalledSW` 所示，虚拟机安装操作系统后仅安装 Oracle VirtualBox Guest Additions 7.2.4 以便于虚拟机管理和操作，不安装额外的程序。
 
 .. figure:: Resource/Images/Snipaste_2026-01-09_11-36-19.png
     :name: fig_osc_PreInstalledSW
@@ -68,7 +51,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
     虚拟机软件环境
 
 
-为了开展此次验证试验，我安装了十几台虚拟机，如 :numref:`fig_osc_VirtualMachines` 所示。
+为了开展此次验证试验，安装和 Clone 了十几台虚拟机，如 :numref:`fig_osc_VirtualMachines` 所示。
 
 .. figure:: Resource/Images/Snipaste_2026-01-08_19-59-55.png
     :name: fig_osc_VirtualMachines
@@ -94,7 +77,7 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
 #. Platform Toolset：保持默认选项即可。
 #. MSVC Build Tool Version：保持默认选项即可。
 
-注意：尽管我们的目标是希望程序能够运行在 Windows 7、10、11 上，但是 Windows SDK Version 我们设置为最新的 Windows 10 SDK，会有人担心此处如何保证程序兼容 Windows 7 运行环境吗？相关的解释见【TBD】。
+注意：尽管我们的目标是希望程序能够运行在 Windows 7、10、11 上，但是 Windows SDK Version 我们设置为最新的 Windows 10 SDK，会有人担心此处如何保证程序兼容 Windows 7 运行环境吗？相关的解释见微软 `Visual C++ 团队 <https://devblogs.microsoft.com/cppblog/author/vcblog/>`_ 的 Pat Brenner 撰写的文章： `Setting WINVER for MFC Applications <https://devblogs.microsoft.com/cppblog/setting-winver-for-mfc-applications/>`_。
 
 程序界面如 :numref:`fig_osc_MFCUtilDemo` 所示。
 
@@ -791,6 +774,7 @@ Microsoft Visual C++ Redistributable Package (可再发行程序包) 包括 Micr
 
 参考链接：
 
+#. `Setting WINVER for MFC Applications <https://devblogs.microsoft.com/cppblog/setting-winver-for-mfc-applications/>`_
 #. `MSDN: 重新分发 Visual C++ 文件 <https://learn.microsoft.com/zh-cn/cpp/windows/redistributing-visual-cpp-files>`_
 #. `MSDN: Microsoft Visual C++ 可再发行程序包最新支持的下载 <https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist>`_
 #. `MSDN: Visual Studio 版本之间的 C++ 二进制兼容性 <https://learn.microsoft.com/zh-cn/cpp/porting/binary-compat-2015-2017?view=msvc-170>`_
