@@ -351,11 +351,11 @@ MFC 程序兼容 Windows XP、Windows Server 2003 及更早的操作系统，那
     :name: fig_osc_Win7SP1CHS_RunSharedReleaseUtil_Fail
     :align: center
 
-.. error:: 共享动态链接库 Release 版 MFC 示范程序程序在简体中文版 Win7SP1 虚拟机上运行出错
+    共享动态链接库 Release 版 MFC 示范程序程序在简体中文版 Win7SP1 虚拟机上运行出错
 
 如 :numref:`fig_osc_Win7SP1CHS_RunSharedReleaseUtil_Fail` 所示，简体中文版的报错信息为：
 
-    无法启动此程序，因为计算机中丢失 mfc140u.dll。尝试重新安装该程序以解决此问题。
+.. error:: 无法启动此程序，因为计算机中丢失 mfc140u.dll。尝试重新安装该程序以解决此问题。
 
 解决方案：安装 Microsoft Visual C++ Redistributable Package (可再发行程序包)
 ################################################################################################
