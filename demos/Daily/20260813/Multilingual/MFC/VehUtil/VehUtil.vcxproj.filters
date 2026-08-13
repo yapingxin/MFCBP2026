@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{bf581e26-62b3-4cc3-aa0b-f4381da495c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceFiles">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ResourceFiles\MFC">
+      <UniqueIdentifier>{a4b47d65-94ad-4602-a9b1-bf28c30a63f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\MFCUtility">
+      <UniqueIdentifier>{0f4bf9a5-85e5-42d6-9625-1bdc2b3227a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\MFCUtility\Framework">
+      <UniqueIdentifier>{08092f6a-626b-4ea0-b19a-15109236a9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\MFCUtility\MainFrame">
+      <UniqueIdentifier>{e5fc0b6e-75c6-4886-87a0-946a80f2f075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{5fa67c41-1337-4122-bea8-0e93e0d8c323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\MFCUtility\Main">
+      <UniqueIdentifier>{a066a4cb-511e-4e84-a863-9f6aee099113}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VehUtil.ico">
+      <Filter>ResourceFiles\MFC</Filter>
+    </None>
+    <None Include="res\VehUtil.rc2">
+      <Filter>ResourceFiles\MFC</Filter>
+    </None>
+    <None Include="Doc\ReadMe.txt">
+      <Filter>Doc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Code\MFCUtility\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Code\MFCUtility\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Code\MFCUtility\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame\VehUtilDlg.h">
+      <Filter>Code\MFCUtility\MainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\VehUtil.h">
+      <Filter>Code\MFCUtility\Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrame\VehUtilDlg.cpp">
+      <Filter>Code\MFCUtility\MainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\VehUtil.cpp">
+      <Filter>Code\MFCUtility\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VehUtil.rc">
+      <Filter>ResourceFiles\MFC</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+/.vscode
+/demos/Daily/20260813/Multilingual/IntDir
+/demos/Daily/20260813/Multilingual/Multilingual-MFC-Solution.suo
+/demos/Daily/20260813/Multilingual/Multilingual-MFC-Solution.sdf
+/demos/Daily/20260813/Multilingual/Output
+/demos/Daily/20260813/Multilingual/MFC/VehUtil/VehUtil.aps
+/demos/Daily/20260813/Multilingual/MFC/VehUtil/VehUtil.vcxproj.user
