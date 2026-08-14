@@ -57,6 +57,7 @@ CVehUtilDlg::CVehUtilDlg(CWnd* pParent /*=NULL*/)
 void CVehUtilDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+    DDX_Control(pDX, IDC_OPTMSG, m_VerboseMsg);
 }
 
 BEGIN_MESSAGE_MAP(CVehUtilDlg, CDialogEx)
@@ -98,7 +99,9 @@ BOOL CVehUtilDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// 设置大图标
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
-	// TODO: 在此添加额外的初始化代码
+	m_VerboseMsg.SetBkColor(BLACK);
+    m_VerboseMsg.SetTextColor(LIGHTGREEN);
+    m_VerboseMsg.SetWindowText(_T("载机仿真模型已加载。"));
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }

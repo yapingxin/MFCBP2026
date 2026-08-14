@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include "LibDev/MFCLib/include/MfcExtControls/ColorEdit.h"
 
 // CVehUtilDlg ¶Ô»°¿ò
 class CVehUtilDlg : public CDialogEx
@@ -30,4 +31,7 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+
+private:
+    CColorEdit m_VerboseMsg;
 };
