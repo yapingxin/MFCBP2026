@@ -1,4 +1,4 @@
-// This file was created on March 21st 2001 by Robert Brault.
+﻿// This file was created on March 21st 2001 by Robert Brault.
 // I created this Class to be able change the Color of your Edit Box
 // as well as your Edit Box Text. This is Derived from CEdit so you
 // do not have all the overhead of a CRichEditCtrl.

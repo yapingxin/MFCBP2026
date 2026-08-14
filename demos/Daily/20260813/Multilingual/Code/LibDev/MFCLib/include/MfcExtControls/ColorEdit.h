@@ -1,4 +1,4 @@
-// This file was created on March 21st 2001. By Robert Brault
+﻿// This file was created on March 21st 2001. By Robert Brault
 //
 //
 #if !defined(AFX_ColorEdit_H__E889B47D_AF6B_4066_B055_967508314A88__INCLUDED_)
