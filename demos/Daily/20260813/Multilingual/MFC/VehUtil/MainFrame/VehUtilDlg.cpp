@@ -103,9 +103,12 @@ BOOL CVehUtilDlg::OnInitDialog()
 	// extra initialization :: Begin
 	// =============================
 
+    CString strVerboseMsg;
+    strVerboseMsg.LoadString(IDS_CUSTMSG_VEHSIM_MODEL_LOADED);
+
 	m_VerboseMsg.SetBkColor(BLACK);
     m_VerboseMsg.SetTextColor(LIGHTGREEN);
-    m_VerboseMsg.SetWindowText(_T("载机仿真模型已加载。"));
+    m_VerboseMsg.SetWindowText(strVerboseMsg);
 
 	// =============================
 	// extra initialization :: END
