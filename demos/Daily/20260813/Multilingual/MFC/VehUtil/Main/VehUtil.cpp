@@ -51,7 +51,7 @@ BOOL CVehUtilApp::InitInstance()
 
 	// 创建 shell 管理器，以防对话框包含
 	// 任何 shell 树视图控件或 shell 列表视图控件。
-	CShellManager *pShellManager = new CShellManager;
+	// CShellManager *pShellManager = new CShellManager;
 
 	// 标准初始化
 	// 如果未使用这些功能并希望减小
@@ -60,7 +60,7 @@ BOOL CVehUtilApp::InitInstance()
 	// 更改用于存储设置的注册表项
 	// TODO: 应适当修改该字符串，
 	// 例如修改为公司或组织名
-	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
+	// SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
 
 	CVehUtilDlg dlg;
 	m_pMainWnd = &dlg;
@@ -77,10 +77,10 @@ BOOL CVehUtilApp::InitInstance()
 	}
 
 	// 删除上面创建的 shell 管理器。
-	if (pShellManager != NULL)
-	{
-		delete pShellManager;
-	}
+	// if (pShellManager != NULL)
+	// {
+	// 	delete pShellManager;
+	// }
 
 	// 由于对话框已关闭，所以将返回 FALSE 以便退出应用程序，
 	//  而不是启动应用程序的消息泵。
