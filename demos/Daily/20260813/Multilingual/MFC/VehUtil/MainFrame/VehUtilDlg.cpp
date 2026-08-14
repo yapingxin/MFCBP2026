@@ -22,7 +22,7 @@ public:
 // 对话框数据
 	enum { IDD = IDD_ABOUTBOX };
 
-	protected:
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 // 实现
@@ -61,6 +61,7 @@ void CVehUtilDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CVehUtilDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
+	ON_WM_SIZING()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 END_MESSAGE_MAP()
@@ -113,6 +114,77 @@ void CVehUtilDlg::OnSysCommand(UINT nID, LPARAM lParam)
 	{
 		CDialogEx::OnSysCommand(nID, lParam);
 	}
+}
+
+// 在OnSizing事件中，限定窗口最大和最小的尺寸
+void CVehUtilDlg::OnSizing(UINT nSide, LPRECT lpRect)
+{
+    static int SAV_W = 0;
+    static int SAV_H = 0;
+
+    int curWidth = lpRect->right - lpRect->left;
+    int curHeight = lpRect->bottom - lpRect->top;
+
+    if (SAV_W == 0 && SAV_H == 0)
+    {
+	    SAV_W = curWidth;
+	    SAV_H = curHeight;
+    }
+
+    int MIN__WIDTH = SAV_W;
+    int MIN_HEIGHT = SAV_H;
+    int MAX__WIDTH = (int)(SAV_W * 1.0);
+    int MAX_HEIGHT = (int)(SAV_H * 1.0);
+
+    if (curWidth < MIN__WIDTH)
+    {
+	    if (nSide == WMSZ_LEFT || nSide == WMSZ_TOPLEFT || nSide == WMSZ_BOTTOMLEFT)
+	    {
+		    lpRect->left = lpRect->right - MIN__WIDTH;
+	    }
+	    else
+	    {
+		    lpRect->right = lpRect->left + MIN__WIDTH;
+	    }
+    }
+
+    if (curHeight < MIN_HEIGHT)
+    {
+	    if (nSide == WMSZ_TOP || nSide == WMSZ_TOPLEFT || nSide == WMSZ_TOPRIGHT)
+	    {
+		    lpRect->top = lpRect->bottom - MIN_HEIGHT;
+	    }
+	    else
+	    {
+		    lpRect->bottom = lpRect->top + MIN_HEIGHT;
+	    }
+    }
+
+    if (curWidth > MAX__WIDTH)
+    {
+	    if (nSide == WMSZ_LEFT || nSide == WMSZ_TOPLEFT || nSide == WMSZ_BOTTOMLEFT)
+	    {
+		    lpRect->left = lpRect->right - MAX__WIDTH;
+	    }
+	    else
+	    {
+		    lpRect->right = lpRect->left + MAX__WIDTH;
+	    }
+    }
+
+    if (curHeight > MAX_HEIGHT)
+    {
+	    if (nSide == WMSZ_TOP || nSide == WMSZ_TOPLEFT || nSide == WMSZ_TOPRIGHT)
+	    {
+		    lpRect->top = lpRect->bottom - MAX_HEIGHT;
+	    }
+	    else
+	    {
+		    lpRect->bottom = lpRect->top + MAX_HEIGHT;
+	    }
+    }
+
+    CDialogEx::OnSizing(nSide, lpRect);
 }
 
 // 如果向对话框添加最小化按钮，则需要下面的代码

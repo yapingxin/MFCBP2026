@@ -15,7 +15,7 @@ public:
 // 对话框数据
 	enum { IDD = IDD_VEHUTIL_DIALOG };
 
-	protected:
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV 支持
 
 
@@ -26,6 +26,7 @@ protected:
 	// 生成的消息映射函数
 	virtual BOOL OnInitDialog();
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
+	virtual afx_msg void OnSizing(UINT nSide, LPRECT lpRect);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
