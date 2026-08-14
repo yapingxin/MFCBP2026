@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{9dc4e3d3-28fe-4727-98b6-542b0b992097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\include">
+      <UniqueIdentifier>{f1578ea7-0960-414b-b8df-bce39e3415a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\src">
+      <UniqueIdentifier>{7d3e2e21-a114-4b33-887b-d744c18d5fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\src\ColorEdit">
+      <UniqueIdentifier>{4c18ad18-d611-46f2-b1c9-dd615676d943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Framework">
+      <UniqueIdentifier>{f5976abe-e4fd-4cf0-87cb-23a86ca40dc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Code\LibDev\MFCLib\src\ColorEdit\ColorEdit.cpp">
+      <Filter>Code\src\ColorEdit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\LibDev\MFCLib\include\MfcExtControls\Color.h">
+      <Filter>Code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\LibDev\MFCLib\include\MfcExtControls\ColorEdit.h">
+      <Filter>Code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Code\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Code\Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

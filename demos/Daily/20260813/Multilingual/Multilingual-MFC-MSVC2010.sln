@@ -4,6 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MFC", "MFC", "{5EF2C8A9-DD6F-4054-A81A-1D590A9129CB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VehUtil", "MFC\VehUtil\VehUtil.vcxproj", "{4FA25793-0FCC-4B00-87C2-389105B26C43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA} = {0EFD55C1-81A3-47E3-835F-606A76B8E4CA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibDev", "LibDev", "{C3502421-7322-43EE-B2E7-0CB805FB8F83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MFCLib", "MFCLib", "{139279C4-505E-4572-98E6-211DB36370C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MfcExtControls", "LibDev\MFCLib\MfcExtControls\MfcExtControls.vcxproj", "{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,11 +30,19 @@ Global
 		{4FA25793-0FCC-4B00-87C2-389105B26C43}.Release|Win32.Build.0 = Release|Win32
 		{4FA25793-0FCC-4B00-87C2-389105B26C43}.Release|x64.ActiveCfg = Release|x64
 		{4FA25793-0FCC-4B00-87C2-389105B26C43}.Release|x64.Build.0 = Release|x64
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Debug|Win32.Build.0 = Debug|Win32
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Debug|x64.ActiveCfg = Debug|x64
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Release|Win32.ActiveCfg = Release|Win32
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Release|Win32.Build.0 = Release|Win32
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FA25793-0FCC-4B00-87C2-389105B26C43} = {5EF2C8A9-DD6F-4054-A81A-1D590A9129CB}
+		{139279C4-505E-4572-98E6-211DB36370C7} = {C3502421-7322-43EE-B2E7-0CB805FB8F83}
+		{0EFD55C1-81A3-47E3-835F-606A76B8E4CA} = {139279C4-505E-4572-98E6-211DB36370C7}
 	EndGlobalSection
 EndGlobal
