@@ -99,9 +99,12 @@ SUBLANG_JAPANESE_JAPAN		langId = 0x0411 (1041)
 
 IDS_SWITCHLANG
 
-切换界面显示语言
-Switch Display Language
-切り替え表示言語
+切换界面显示语言 | Switch Display Language
+Switch Display Language | 切换界面显示语言
+切り替え表示言語 | Switch Display Language
+
+#define IDM_SWITCHLANG                  0x0020
+
 
 
 

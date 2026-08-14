@@ -92,6 +92,19 @@ BOOL CVehUtilDlg::OnInitDialog()
 			pSysMenu->AppendMenu(MF_SEPARATOR);
 			pSysMenu->AppendMenu(MF_STRING, IDM_ABOUTBOX, strAboutMenu);
 		}
+
+        // 将“切换界面显示语言”菜单项添加到系统菜单中。
+
+        // IDM_ABOUTBOX 必须在系统命令范围内。
+        ASSERT((IDM_SWITCHLANG & 0xFFF0) == IDM_SWITCHLANG);
+        ASSERT(IDM_SWITCHLANG < 0xF000);
+
+        bNameValid = strAboutMenu.LoadString(IDS_SWITCHLANG);
+        ASSERT(bNameValid);
+        if (!strAboutMenu.IsEmpty())
+        {
+            pSysMenu->AppendMenu(MF_STRING, IDM_SWITCHLANG, strAboutMenu);
+        }
 	}
 
 	// 设置此对话框的图标。当应用程序主窗口不是对话框时，框架将自动
@@ -124,6 +137,11 @@ void CVehUtilDlg::OnSysCommand(UINT nID, LPARAM lParam)
 		CAboutDlg dlgAbout;
 		dlgAbout.DoModal();
 	}
+    else if ((nID & 0xFFF0) == IDM_SWITCHLANG)
+    {
+        CAboutDlg dlgAbout;
+		dlgAbout.DoModal();
+    }
 	else
 	{
 		CDialogEx::OnSysCommand(nID, lParam);
