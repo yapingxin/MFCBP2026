@@ -48,18 +48,16 @@ BOOL CVehUtilApp::InitInstance()
 
 	CWinApp::InitInstance();
 
-	// 标准初始化
-	// 如果未使用这些功能并希望减小
-	// 最终可执行文件的大小，则应移除下列
-	// 不需要的特定初始化例程
-	// 更改用于存储设置的注册表项
-	// TODO: 应适当修改该字符串，
-	// 例如修改为公司或组织名
-	// SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
+    SetRegistryKey(_T("iSpace\\Defense\\BeijingGroup"));
 
-    // SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT));
-    // SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT));
-    SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT));
+    UINT langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    if(langId == 0)
+    {
+        WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), LANG_USER_DEFAULT);
+        langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    }
+
+    SetThreadUILanguage(langId);
 
 	CVehUtilDlg dlg;
 	m_pMainWnd = &dlg;

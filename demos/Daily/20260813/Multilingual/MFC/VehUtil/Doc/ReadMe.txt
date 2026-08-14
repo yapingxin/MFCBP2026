@@ -65,3 +65,37 @@ VehUtil.manifest
 如果应用程序在共享的 DLL 中使用 MFC，则需要重新发布这些 MFC DLL；如果应用程序所用的语言与操作系统的当前区域设置不同，则还需要重新发布对应的本地化资源 MFC100XXX.DLL。有关这两个主题的更多信息，请参见 MSDN 文档中有关 Redistributing Visual C++ applications (重新发布 Visual C++ 应用程序)的章节。
 
 /////////////////////////////////////////////////////////////////////////////
+
+===============================================================================================
+
+LANG_USER_DEFAULT		langId = 0x0400 (1024)
+SUBLANG_CHINESE_SIMPLIFIED	langId = 0x0804 (2052)
+SUBLANG_ENGLISH_US		langId = 0x0409 (1033)
+SUBLANG_JAPANESE_JAPAN		langId = 0x0411 (1041)
+
+===============================================================================================
+
+    LANGID langId = LANG_USER_DEFAULT;
+
+    langId = MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT);
+    langId = MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT);
+    langId = MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT);
+
+
+
+    SetRegistryKey(_T("iSpace\\Defense\\BeijingGroup"));
+    // WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), 1024);
+
+    UINT langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    if(langId == 0)
+    {
+        WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), LANG_USER_DEFAULT);
+        langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    }
+
+    SetThreadUILanguage(langId);
+
+===============================================================================================
+
+
+
