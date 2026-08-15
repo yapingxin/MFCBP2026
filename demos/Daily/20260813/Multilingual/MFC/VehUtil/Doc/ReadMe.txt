@@ -149,3 +149,33 @@ Switch Display Language | 切换界面显示语言
 选择界面显示语言：
 Choose Display Language:
 選ぶインターフェース表示言語：
+
+
+
+IDS_LANGSELTIPS_CURRENT
+当前程序界面显示语言设置为：%s。点击`取消`按钮将关闭`切换界面显示语言`对话框。
+Current application display language is: %s. Click `Cancel` button will close the `Switch Display Language` dialog.
+
+現在のプログラムのインターフェース表示言語は`%s`です。
+
+`取り消す`ボタンをクリックすると、`表示言語の切り替え`ダイアログが閉じます。`取り消す`ボタンをクリックすると、「切り替え画面の表示言語」ダイアログが閉じます。
+
+ボタンをクリックすると「切り替え画面の表示言語」ダイアログが閉じます。
+`取り消す`ボタンをクリックすると、「切り替え画面の表示言語」ダイアログが閉じます。
+
+
+
+
+
+IDS_LANGSELTIPS_CHANGE
+已选择`%s`作为新的程序界面显示语言。点击`确定`按钮并关闭程序，再次打开程序可使设置生效。点击`取消`按钮将取消设置。
+Selected `%s` as the new application display language. Click the `OK` button than re-launch application will apply this configuration. Click `Cancel` button will discharge the change.
+
+---
+`%s`を新しいプログラムのインターフェース表示言語として選択しました。
+
+
+已选择`简体中文`作为新的程序界面显示语言。`確認`ボタンをクリックしてプログラムを再起動すると、設定が反映されます。
+
+
+点击`确定`按钮并重新打开程序可使设置生效。

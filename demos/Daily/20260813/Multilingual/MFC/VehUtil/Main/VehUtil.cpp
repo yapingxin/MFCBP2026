@@ -13,6 +13,9 @@
 
 // CVehUtilApp
 
+#define UTIL_REGKEY_PATH _T("iSpace\\Defense\\BeijingGroup")
+
+
 BEGIN_MESSAGE_MAP(CVehUtilApp, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
@@ -48,16 +51,16 @@ BOOL CVehUtilApp::InitInstance()
 
 	CWinApp::InitInstance();
 
-    SetRegistryKey(_T("iSpace\\Defense\\BeijingGroup"));
+    SetRegistryKey(UTIL_REGKEY_PATH);
 
-    UINT langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
-    if(langId == 0)
+    m_LangId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    if(m_LangId == 0)
     {
         WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), LANG_USER_DEFAULT);
-        langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+        m_LangId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
     }
 
-    SetThreadUILanguage(langId);
+    SetThreadUILanguage(m_LangId);
 
 	CVehUtilDlg dlg;
 	m_pMainWnd = &dlg;
@@ -80,3 +83,8 @@ BOOL CVehUtilApp::InitInstance()
 	return FALSE;
 }
 
+void CVehUtilApp::ChangeDisplayLang(LANGID langId)
+{
+    WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), langId);
+    SetThreadUILanguage(langId);
+}

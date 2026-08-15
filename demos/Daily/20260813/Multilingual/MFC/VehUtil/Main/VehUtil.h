@@ -24,6 +24,10 @@ public:
 public:
 	virtual BOOL InitInstance();
 
+    void ChangeDisplayLang(LANGID langId);
+
+    LANGID m_LangId;
+
 // 实现
 
 	DECLARE_MESSAGE_MAP()

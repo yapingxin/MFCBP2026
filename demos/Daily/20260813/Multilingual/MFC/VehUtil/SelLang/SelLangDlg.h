@@ -4,6 +4,7 @@
 #include "LibDev/MFCLib/include/MfcExtControls/ColorEdit.h"
 
 #define SELANG_ITEMSCOUNT 4
+#define LogMessageSZ 1024
 
 class CSelLangDlg : public CDialogEx
 {
@@ -18,7 +19,10 @@ public:
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
     virtual BOOL OnInitDialog();
+    virtual void OnOK();
 	DECLARE_MESSAGE_MAP()
+
+    afx_msg void OnComboSelchangeLangId();
 
 private:
     CComboBox m_cbSelLang;
@@ -26,4 +30,7 @@ private:
 
     TCHAR  m_SelangItemTxt[SELANG_ITEMSCOUNT][MAX_PATH];
     LANGID m_SelangItemIdx[SELANG_ITEMSCOUNT];
+    LANGID m_SelLangId;
+    TCHAR m_MessageLangTipsCurrent[LogMessageSZ];
+    CString m_MessageLangTipsFormat_Change;
 };
