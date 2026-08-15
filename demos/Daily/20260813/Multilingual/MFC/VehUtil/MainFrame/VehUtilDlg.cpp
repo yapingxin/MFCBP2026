@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "Main\VehUtil.h"
 #include "MainFrame\VehUtilDlg.h"
+#include "SelLang\SelLangDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -139,8 +140,8 @@ void CVehUtilDlg::OnSysCommand(UINT nID, LPARAM lParam)
 	}
     else if ((nID & 0xFFF0) == IDM_SWITCHLANG)
     {
-        CAboutDlg dlgAbout;
-		dlgAbout.DoModal();
+        CSelLangDlg dlgSelang;
+		dlgSelang.DoModal();
     }
 	else
 	{

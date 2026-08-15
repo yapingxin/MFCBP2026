@@ -106,6 +106,22 @@ Switch Display Language | 切换界面显示语言
 #define IDM_SWITCHLANG                  0x0020
 
 
+==================================================================================================
+
+SelLang
+
+IDD_SELANG_DLG
+
+选择界面显示语言：
+
+
+IDC_COMBO_LANGS
+
+
+CSelLangDlg
+
+
+
 
 
 

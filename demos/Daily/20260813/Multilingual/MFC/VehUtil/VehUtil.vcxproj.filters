@@ -26,6 +26,9 @@
     <Filter Include="Code\MFCUtility\Main">
       <UniqueIdentifier>{a066a4cb-511e-4e84-a863-9f6aee099113}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\MFCUtility\SelLang">
+      <UniqueIdentifier>{205d64a3-70cf-47d9-9f86-0075297f12c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\VehUtil.ico">
@@ -54,6 +57,9 @@
     <ClInclude Include="Main\VehUtil.h">
       <Filter>Code\MFCUtility\Main</Filter>
     </ClInclude>
+    <ClInclude Include="SelLang\SelLangDlg.h">
+      <Filter>Code\MFCUtility\SelLang</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrame\VehUtilDlg.cpp">
@@ -61,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="Main\VehUtil.cpp">
       <Filter>Code\MFCUtility\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SelLang\SelLangDlg.cpp">
+      <Filter>Code\MFCUtility\SelLang</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
