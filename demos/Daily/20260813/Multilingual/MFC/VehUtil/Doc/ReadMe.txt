@@ -142,3 +142,10 @@ IDS_SEL_LANGID_JAPANESE_JAPAN
 Japanese | 日本語
 日本語 (JAPANESE_JAPAN)
 
+切换界面显示语言 | Switch Display Language
+Switch Display Language | 切换界面显示语言
+切り替えインターフェース表示言語 | Switch Display Language
+
+选择界面显示语言：
+Choose Display Language:
+選ぶインターフェース表示言語：
