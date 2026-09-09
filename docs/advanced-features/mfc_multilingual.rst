@@ -18,7 +18,7 @@
 演示程序
 ~~~~~~~~~~
 
-本文配套的演示程序采用递进的方式逐渐增加多国语言界面及相关功能。演示程序的各个版本如 :numref:`table_mfcmul_DemoUtilVersionsTable` 所示。
+本文配套的演示程序采用递进的方式逐渐增加多国语言界面及相关功能。演示程序的各个版本如 :numref:`table_mfcmul_DemoUtilVersionsTable` 所示。通过下载链接可得到演示程序的源代码、VS2010工程文件和编译后的可执行程序。
 
 .. list-table:: 演示程序的各个版本
    :name: table_mfcmul_DemoUtilVersionsTable
@@ -50,4 +50,5 @@
 
     演示程序（初始版本）显示界面
 
+为了方便公司同事，演示程序采用 Visual C++ 2010 (VC++ 10.0) 开发。项目的字符集设置为Unicode，以避免界面上的文字在非同族语言环境中被显示为乱码，这一点非常重要。
 
