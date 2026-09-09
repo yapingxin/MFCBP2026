@@ -42,4 +42,12 @@
      - :download:`下载：Multilingual_v0.2.0.3.zip <./Resource/Demos/Multilingual_v0.2.0.3.zip>`
      - 增加界面显示语言选择对话框
 
-演示程序的初始版本
+演示程序的初始版本仅包括一个中文界面，如 :numref:`fig_mfcmul_DisplayUI_InitVersion` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-09-09_14-06-41.png
+    :name: fig_mfcmul_DisplayUI_InitVersion
+    :align: center
+
+    演示程序（初始版本）显示界面
+
+
