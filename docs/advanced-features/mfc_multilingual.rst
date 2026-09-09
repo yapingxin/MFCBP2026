@@ -23,14 +23,20 @@
    :header-rows: 1
    :align: center
 
-   * - \
-     - 在静态库中使用 MFC 类库
-     - 在共享动态链接库中使用 MFC 类库
-   * - x64 Release
-     - 3.76 MB
-     - 46.5 KB
-   * - x64 Debug
-     - 12.6 MB
-     - 219 KB
+   * - 版本号
+     - 下载链接
+     - 说明
+   * - 0.2.0.0
+     - Resource/Demos/Multilingual_v0.2.0.0.zip
+     - 初始版本
+   * - 0.2.0.1
+     - Resource/Demos/Multilingual_v0.2.0.1.zip
+     - 小改动
+   * - 0.2.0.2
+     - Resource/Demos/Multilingual_v0.2.0.2.zip
+     - 增加多国语言显示界面
+   * - 0.2.0.3
+     - Resource/Demos/Multilingual_v0.2.0.3.zip
+     - 增加界面显示语言选择对话框
 
 演示程序的初始版本
