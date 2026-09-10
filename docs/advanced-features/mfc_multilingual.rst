@@ -127,7 +127,13 @@
 
     观察：在属性列表中可以看到对话框窗体所关联的语言设置
 
-【观察验证3】通过 Beyond Compare 等工具软件观察截至到目前为止，演示程序的源代码相比 0.2.0.1 版源代码都进行了哪些修改。注意到以下情况：
+【观察验证3】如 :numref:`fig_mfcmul_v0.2.0.1_V3_CompareCodeChange` 所示，通过 Beyond Compare 等工具软件观察截至到目前为止，演示程序的源代码相比 0.2.0.1 版源代码都进行了哪些修改。注意到以下情况：
+
+.. figure:: Resource/images/Snipaste_2026-09-10_16-13-57.png
+    :name: fig_mfcmul_v0.2.0.1_V3_CompareCodeChange
+    :align: center
+
+    观察：通过 Beyond Compare 比较源代码的变更
 
 #. Source/MFC/VehUtil/Resource.h 没有任何变化。这说明在对话框窗体 IDD_VEHUTIL_DIALOG（即程序主窗体）多次执行 Insert Copy 的过程中，生成的窗体副本里面的控件全都重用了原始版本中控件的 ID。
 #. Source/MFC/VehUtil/VehUtil.rc 在这个文件里，对话框窗体 IDD_VEHUTIL_DIALOG（即程序主窗体）的定义被复制成了 3 份，分别与简体中文、英语、日语这 3 种语言设置相关联。
@@ -141,4 +147,4 @@
 
 在 :numref:`操作：增加多国语言界面` :ref:`label-section-opt-create-multilingual-maindialog` 中，为演示程序创建了简体中文、英文和日文这 3 个不同显示语言的程序主窗体（对话框窗体），接下来，分别对这 3 个对话框窗体进行调整，使其控件布局合理。
 
-简体中文呢显示界面
+简体中文显示界面
