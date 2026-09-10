@@ -99,7 +99,7 @@
 
 选择资源语言设置为：Japanese (Japan)，如 :numref:`fig_mfcmul_v0.2.0.1_S4_ChooseJPN` 所示。
 
-.. figure:: Resource/images/Snipaste_2026-08-14_12-25-36.png
+.. figure:: Resource/images/Snipaste_2026-08-14_12-27-01.png
     :name: fig_mfcmul_v0.2.0.1_S4_ChooseJPN
     :align: center
 
