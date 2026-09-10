@@ -87,4 +87,20 @@
     :name: fig_mfcmul_v0.2.0.1_S2_ChooseENU
     :align: center
 
-    选择资源语言设置为：English (United States)
+    选择资源副本的语言设置为：English (United States)
+
+进行这一步操作之后会看到在 MFC 应用程序的资源视图（Resource View）中，多了一个主窗体，其 ID 也是 IDD_VEHUTIL_DIALOG。继续选择程序主窗体 IDD_VEHUTIL_DIALOG，点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S3_InsertCopy` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_12-24-55.png
+    :name: fig_mfcmul_v0.2.0.1_S3_InsertCopy
+    :align: center
+
+    在上下文菜单中选择：Insert Copy
+
+选择资源语言设置为：Japanese (Japan)，如 :numref:`fig_mfcmul_v0.2.0.1_S4_ChooseJPN` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_12-25-36.png
+    :name: fig_mfcmul_v0.2.0.1_S4_ChooseJPN
+    :align: center
+
+    选择资源副本的语言设置为：Japanese (Japan)
