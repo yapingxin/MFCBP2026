@@ -81,3 +81,10 @@
 
     在上下文菜单中选择：Insert Copy
 
+选择资源语言设置为：English (United States)，如 :numref:`fig_mfcmul_v0.2.0.1_S2_ChooseENU` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_12-24-55.png
+    :name: fig_mfcmul_v0.2.0.1_S2_ChooseENU
+    :align: center
+
+    选择资源语言设置为：English (United States)
