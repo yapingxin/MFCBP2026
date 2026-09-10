@@ -119,7 +119,7 @@
 
 【观察验证2】如 :numref:`fig_mfcmul_v0.2.0.1_V2_3MainDialogsLangPropt` 所示，在资源视图的树状列表中，通过鼠标左键点击选择 ID 为 IDD_VEHUTIL_DIALOG 的所有对话框窗体，在属性列表中可以看到它们所关联的语言设置。
 
-.. figure:: Resource/images/Snipaste_2026-09-10_11-34-03_Combine.png
+.. figure:: Resource/images/Snipaste_2026-09-10_11-47-44_Combine.png
     :name: fig_mfcmul_v0.2.0.1_V2_3MainDialogsLangPropt
     :align: center
 
