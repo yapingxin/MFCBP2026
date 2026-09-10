@@ -73,7 +73,7 @@
 操作：增加多国语言界面
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-【操作步骤1】在 MFC 应用程序 VehUtil 的资源视图（Resource View）中，选择程序主窗体 IDD_VEHUTIL_DIALOG，点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S1_InsertCopy` 所示。
+【操作步骤1】在 MFC 应用程序 VehUtil 的资源视图（Resource View）中，选择对话框窗体 IDD_VEHUTIL_DIALOG（即程序主窗体），点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S1_InsertCopy` 所示。
 
 .. figure:: Resource/images/Snipaste_2026-08-14_12-24-55.png
     :name: fig_mfcmul_v0.2.0.1_S1_InsertCopy
@@ -89,7 +89,7 @@
 
     选择资源副本的语言设置为：English (United States)
 
-进行这一步操作之后会看到在 MFC 应用程序的资源视图（Resource View）中，多了一个主窗体，其 ID 也是 IDD_VEHUTIL_DIALOG。【操作步骤3】继续选择程序主窗体 IDD_VEHUTIL_DIALOG，点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S3_InsertCopy` 所示。
+进行这一步操作之后会看到在 MFC 应用程序的资源视图（Resource View）中，多了一个对话框窗体，其 ID 也是 IDD_VEHUTIL_DIALOG。【操作步骤3】继续选择程序主窗体 IDD_VEHUTIL_DIALOG，点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S3_InsertCopy` 所示。
 
 .. figure:: Resource/images/Snipaste_2026-08-14_12-26-21.png
     :name: fig_mfcmul_v0.2.0.1_S3_InsertCopy
@@ -104,3 +104,12 @@
     :align: center
 
     选择资源副本的语言设置为：Japanese (Japan)
+
+【观察验证1】如 :numref:`fig_mfcmul_v0.2.0.1_V1_Have3MainDialogWinForms` 所示，此时，可以看到在资源视图（Resource View）中，一共有 3 个 ID 为 IDD_VEHUTIL_DIALOG 的对话框窗体，它们分别关联了不同的资源语言设置：简体中文、英语、日语。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_12-27-21.png
+    :name: fig_mfcmul_v0.2.0.1_V1_Have3MainDialogWinForms
+    :align: center
+
+    观察：资源视图中有 3 个 ID 为 IDD_VEHUTIL_DIALOG 的对话框窗体
+
