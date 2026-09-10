@@ -52,6 +52,14 @@
 
 为了方便公司同事，演示程序采用 Visual C++ 2010 (VC++ 10.0) 开发。项目的字符集设置为Unicode，以避免界面上的文字在非同族语言环境中被显示为乱码，这一点非常重要。
 
+注：在创建演示程序的时候，在MFC应用程序向导中，将资源语言设置（Resource language）设置为简体中文（Chinese (Simplified, China)），如 :numref:`fig_mfcmul_CreateMfcApp_ChooseResourceLanguage` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-13_16-45-05.png
+    :name: fig_mfcmul_CreateMfcApp_ChooseResourceLanguage
+    :align: center
+
+    演示程序资源语言设置
+
 下面通过对演示程序的初始版本（版本号：0.2.0.0）进行修改演示如何实现多国语言界面。
 
 实现多国语言界面
@@ -64,3 +72,4 @@
 
 操作：增加多国语言界面
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
