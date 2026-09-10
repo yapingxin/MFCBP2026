@@ -5,8 +5,7 @@
 《MFC程序国际化：实现多国语言界面》
 
 .. toctree::
-   :maxdepth: 5
-   :numbered:
+   :maxdepth: 4
 
 前言
 ------
