@@ -60,7 +60,7 @@
 
     演示程序资源语言设置
 
-下面通过对演示程序的初始版本（版本号：0.2.0.0）进行修改演示如何实现多国语言界面。
+下面通过对演示程序进行修改演示如何实现多国语言界面。
 
 实现多国语言界面
 ------------------
@@ -72,4 +72,12 @@
 
 操作：增加多国语言界面
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+在 MFC 应用程序 VehUtil 的资源视图（Resource View）中，选择程序主窗体 IDD_VEHUTIL_DIALOG，点击鼠标右键在弹出的上下文菜单中选择：Insert Copy，如 :numref:`fig_mfcmul_v0.2.0.1_S1_InsertCopy` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_12-24-55.png
+    :name: fig_mfcmul_v0.2.0.1_S1_InsertCopy
+    :align: center
+
+    在上下文菜单中选择：Insert Copy
 
