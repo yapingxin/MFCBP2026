@@ -336,4 +336,26 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 
     创建和修改 IDS_CUSTMSG_VEHSIM_MODEL_LOADED 的不同语种的定义
 
+【观察验证1】如 :numref:`fig_mfcmul_v0.2.0.1_S8_SWITCH_UILANG` 所示，修改注册表中的键值切换程序的界面显示语言。
 
+.. figure:: Resource/images/Snipaste_2026-08-14_16-39-31.png
+    :name: fig_mfcmul_v0.2.0.1_S8_SWITCH_UILANG
+    :align: center
+
+    修改注册表中的键值以切换程序的界面显示语言
+
+运行程序可以看到，切换到英文显示界面时，程序主界面如 :numref:`fig_mfcmul_v0.2.0.1_V8_UILANG_ENU` 所示；切换到日文显示界面时，程序主界面如 :numref:`fig_mfcmul_v0.2.0.1_V8_UILANG_JPN` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-09-11_17-17-59.png
+    :name: fig_mfcmul_v0.2.0.1_V8_UILANG_ENU
+    :align: center
+
+    修改注册表中的键值以切换到英文显示界面
+
+.. figure:: Resource/images/Snipaste_2026-09-11_17-18-17.png
+    :name: fig_mfcmul_v0.2.0.1_V8_UILANG_JPN
+    :align: center
+
+    修改注册表中的键值以切换到日文显示界面
+
+可见，右侧编辑控件中显示的“载机仿真模型已加载。”现在也实现了国际化（多国语言显示）。
