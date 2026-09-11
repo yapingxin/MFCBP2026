@@ -171,7 +171,7 @@
 
     英文显示界面
 
-对上述不同显示语言的界面分别作了调整，使它们各自都达到了合理的控件布局效果。
+对上述不同显示语言的界面分别作了调整，使它们各自都达到了合理的控件布局效果，并且将对话框的标题（Caption）也修改为对应的语言。
 
 总结：
 
@@ -230,9 +230,45 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
    * - 1041
      - MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT)
 
-【实验】在源代码 Source/MFC/VehUtil/Main/VehUtil.cpp 文件，函数 BOOL CVehUtilApp::InitInstance() 中，对话框窗体 CVehUtilDlg 创建并打开之前，插入以下代码，将当前线程的用户界面语言设置为简体中文：
+【实验1】在源代码 Source/MFC/VehUtil/Main/VehUtil.cpp 文件，函数 BOOL CVehUtilApp::InitInstance() 中，对话框窗体 CVehUtilDlg 创建并打开之前，插入以下代码，将当前线程的用户界面语言设置为简体中文：
 
 .. code-block:: c++
 
     SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT));
+
+运行程序，可以观察到程序主界面的显示语言是简体中文，如 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_CHN` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_15-38-42.png
+    :name: fig_mfcmul_v0.2.0.1_S6_UI_Run_CHN
+    :align: center
+
+    运行简体中文显示界面
+
+【实验2】将插入的那行代码换成：
+
+.. code-block:: c++
+
+    SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT));
+
+运行程序，可以观察到程序主界面的显示语言是英文，如 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_ENU` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_15-39-12.png
+    :name: fig_mfcmul_v0.2.0.1_S6_UI_Run_ENU
+    :align: center
+
+    运行英文显示界面
+
+【实验3】将插入的那行代码换成：
+
+.. code-block:: c++
+
+    SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT));
+
+运行程序，可以观察到程序主界面的显示语言是日文，如 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_JPN` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_15-39-42.png
+    :name: fig_mfcmul_v0.2.0.1_S6_UI_Run_JPN
+    :align: center
+
+    运行日文显示界面
 
