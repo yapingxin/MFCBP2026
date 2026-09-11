@@ -272,3 +272,24 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 
     运行日文显示界面
 
+现在我们将【实验1】、【实验2】和【实验3】中插入的代码都删掉，因为接下来要改成正式的界面切换代码了。
+
+切换界面显示语言
+^^^^^^^^^^^^^^^^^^^^
+
+我们打算把用户的显示语言设置存放到程序配置中去，用户可以修改这个配置。程序每次启动时会读取这个配置并设置当前线程的用户界面语言。
+
+程序的配置可以存放在 .ini 文件里，也可存放在注册表中。本文采用后者，用注册表来存放程序的配置。将中插入的代码改为以下代码：
+
+.. code-block:: c++
+    
+    SetRegistryKey(_T("iSpace\\Defense\\BeijingGroup"));
+    
+    UINT langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    if (langId == 0)
+    {
+        WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), LANG_USER_DEFAULT);
+        langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
+    }
+    
+    SetThreadUILanguage(langId);
