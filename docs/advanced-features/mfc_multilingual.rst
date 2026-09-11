@@ -184,7 +184,7 @@
 
 下面探讨如何运行指定语种的显示界面。
 
-在 MSDN 上可以查阅到，只需要在程序主窗体创建前，调用 `SetThreadUILanguage <https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-setthreaduilanguage>`_ 函数，即可设置当前线程的用户界面语言。这个函数的函数原型如下所示：
+在 MSDN 上可以查阅到，只需要在程序主窗体创建前，调用 `SetThreadUILanguage <https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-setthreaduilanguage>`_ 函数，即可设置当前线程的用户界面语言。这个函数的原型如下所示：
 
 .. code-block:: c++
 
@@ -192,4 +192,28 @@
         [in] LANGID LangId
     );
 
-如何给出我们期望的 LangId 呢？我们当然可以直接采用相应的数值。
+LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望的 LangId 呢？我们当然可以直接采用相应的数值。LangId 可以采用的数值如 :numref:`table_mfcmul_LangIdValuesTable` 所示。
+
+.. list-table:: 语言标识符列表
+   :name: table_mfcmul_LangIdValuesTable
+   :widths: 10 18 18
+   :header-rows: 1
+   :align: center
+
+   * - LangId
+     - 含义
+     - 宏定义
+   * - 1024 (0x0400)
+     - 用户默认语言及区域设置
+     - LANG_USER_DEFAULT
+   * - 2052 (0x0804)
+     - 简体中文
+     - MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT)
+   * - 1033 (0x0409)
+     - 英语（美国）
+     - MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT)
+   * - 1041 (0x0411)
+     - 日语（日本）
+     - MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT)
+
+【实验】
