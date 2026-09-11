@@ -363,3 +363,24 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 增加界面显示语言切换对话框
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+演示程序的 0.2.0.3 版相对 0.2.0.2 版的变化，就是增加了界面显示语言的切换对话框。
+
+这个对话框也有不同的界面显示语言副本，如 :numref:`fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_CHS` 、 :numref:`fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_ENU` 和 :numref:`fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_JPN` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-09-11_17-57-49.png
+    :name: fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_CHS
+    :align: center
+
+    界面显示语言的切换对话框的简体中文副本
+
+.. figure:: Resource/images/Snipaste_2026-09-11_17-58-11.png
+    :name: fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_ENU
+    :align: center
+
+    界面显示语言的切换对话框的英文副本
+
+.. figure:: Resource/images/Snipaste_2026-09-11_17-58-27.png
+    :name: fig_mfcmul_v0.2.0.3_S1_SWITCH_UILANG_JPN
+    :align: center
+
+    界面显示语言的切换对话框的日文副本
