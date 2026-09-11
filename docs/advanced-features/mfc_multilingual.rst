@@ -298,7 +298,7 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 
 进行这部分代码修改之后，可以尝试手动把这个注册表键值修改为 1024、2052、1033和1041这些数值，观察程序启动后界面的显示语言。
 
-字符串显示的国际化（多国语言显示）
+字符串显示的国际化
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 在 :numref:`运行多国语言界面` 中，从【实验1】、【实验2】和【实验3】中的 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_CHN` 、:numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_ENU` 、 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_JPN` 运行截图中可以看到，虽然窗体上的控件能够按照多国语言进行显示，但右侧编辑控件中显示的“载机仿真模型已加载。”这几个字始终是简体中文的。能否让这个编辑控件中显示的内容也实现国际化（多国语言显示）呢？本节我们就来解决这个问题。
@@ -384,3 +384,22 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
     :align: center
 
     界面显示语言的切换对话框的日文副本
+
+从界面显示语言切换对话框的实现中，也可以看到如何实现动态字符串的国际化（多国语言显示）。例如，当“选择界面显示语言”下来列表中选中的语言发生变化时，提示文字定义在 String Table 的 IDS_LANGSELTIPS_CHANGE，它的不同语种的字符串值定义如 :numref:`table_mfcmul_LangChangeValuesTable` 所示：
+
+.. list-table:: IDS_LANGSELTIPS_CHANGE 不同语种的字符串值定义
+   :name: table_mfcmul_LangChangeValuesTable
+   :widths: 6 18
+   :header-rows: 1
+   :align: center
+
+   * - 语种
+     - 值定义
+   * - 简体中文
+     - 已选择`%s`作为新的程序界面显示语言。点击`确定`按钮并关闭程序，再次打开程序可使设置生效。点击`取消`按钮将取消设置。
+   * - 英语
+     - Selected `%s` as the new application display language. Click the `OK` button than re-launch application will apply this configuration. Click the `Cancel` button will discharge the change.
+   * - 日语
+     - `%s`を新しいプログラムのインターフェース表示言語として選択しました。`確認`ボタンをクリックしてプログラムを再起動すると、設定が反映されます。`取り消す`ボタンをクリックすると設定がキャンセルされます。
+
+字符串值里含有 %s 占位符，作为字符串的显示格式。这样就能动态地构建多国语言显示的字符串。
