@@ -403,3 +403,11 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
      - `%s`を新しいプログラムのインターフェース表示言語として選択しました。`確認`ボタンをクリックしてプログラムを再起動すると、設定が反映されます。`取り消す`ボタンをクリックすると設定がキャンセルされます。
 
 字符串值里含有 %s 占位符，作为字符串的显示格式。这样就能动态地构建多国语言显示的字符串。
+
+参考链接：
+
+#. `Multilingual User Interface <https://learn.microsoft.com/en-us/windows/win32/intl/multilingual-user-interface>`_
+#. `SetThreadUILanguage function (winnls.h) <https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-setthreaduilanguage>`_
+#. `SetThreadPreferredUILanguages function (winnls.h) <https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-setthreadpreferreduilanguages>`_
+#. `Language Identifiers <https://learn.microsoft.com/en-us/windows/win32/intl/language-identifiers>`_
+#. `Locales and Languages <https://learn.microsoft.com/en-us/windows/win32/intl/locales-and-languages>`_
