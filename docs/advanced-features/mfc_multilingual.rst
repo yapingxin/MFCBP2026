@@ -301,5 +301,29 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 字符串显示的国际化（多国语言显示）
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-在 :numref:`运行多国语言界面` 中，从【实验1】、【实验2】和【实验3】中的 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_CHN` 、 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_ENU` 、 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_JPN` 运行截图中可以看到，虽然窗体上的控件能够按照多国语言进行显示，但
+在 :numref:`运行多国语言界面` 中，从【实验1】、【实验2】和【实验3】中的 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_CHN` 、:numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_ENU` 、 :numref:`fig_mfcmul_v0.2.0.1_S6_UI_Run_JPN` 运行截图中可以看到，虽然窗体上的控件能够按照多国语言进行显示，但右侧编辑控件中显示的“载机仿真模型已加载。”这几个字始终是简体中文的。能否让这个编辑控件中显示的内容也实现国际化（多国语言显示）呢？本节我们就来解决这个问题。
 
+固定字符串的国际化显示
+""""""""""""""""""""""""""""""""""""""
+
+在 MFC 资源的 String Table 中，新增一条定义：IDS_CUSTMSG_VEHSIM_MODEL_LOADED，如 :numref:`fig_mfcmul_v0.2.0.1_S7_STRTAB_1` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_11-51-57.png
+    :name: fig_mfcmul_v0.2.0.1_S7_STRTAB_1
+    :align: center
+
+    新增字符串的定义
+
+“载机仿真模型已加载。”原来的程序源代码如 :numref:`fig_mfcmul_v0.2.0.1_S7_STRTAB_2` 所示，我们进行修改，如 :numref:`fig_mfcmul_v0.2.0.1_S7_STRTAB_3` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_11-55-31.png
+    :name: fig_mfcmul_v0.2.0.1_S7_STRTAB_2
+    :align: center
+
+    采用硬编码（Hardcode）的方式显示字符串
+
+.. figure:: Resource/images/Snipaste_2026-08-14_11-56-40.png
+    :name: fig_mfcmul_v0.2.0.1_S7_STRTAB_3
+    :align: center
+
+    采用 String Table 中的定义显示字符串
