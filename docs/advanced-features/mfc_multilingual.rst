@@ -182,3 +182,14 @@
 运行多国语言界面
 ^^^^^^^^^^^^^^^^^^^^
 
+下面探讨如何运行指定语种的显示界面。
+
+在 MSDN 上可以查阅到，只需要在程序主窗体创建前，调用 `SetThreadUILanguage <https://learn.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-setthreaduilanguage>`_ 函数，即可设置当前线程的用户界面语言。这个函数的函数原型如下所示：
+
+.. code-block:: c++
+
+    LANGID SetThreadUILanguage(
+        [in] LANGID LangId
+    );
+
+如何给出我们期望的 LangId 呢？我们当然可以直接采用相应的数值。
