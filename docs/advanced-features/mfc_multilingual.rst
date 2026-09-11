@@ -291,5 +291,14 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
         WriteProfileInt(_T("AppSettings"), _T("UIDispLangId"), LANG_USER_DEFAULT);
         langId = GetProfileInt(_T("AppSettings"), _T("UIDispLangId"), 0);
     }
-    
+
     SetThreadUILanguage(langId);
+
+上述代码的作用是：程序启动时，读取注册表的 AppSettings/UIDispLangId 键值，如果该键值不存在（返回为0），则创建并写入 1024 (LANG_USER_DEFAULT) 这个数值。这个键值用作 SetThreadUILanguage 函数的 langId 输入参数，从而实现设置当前线程的用户界面语言。
+
+进行这部分代码修改之后，可以尝试手动把这个注册表键值修改为 1024、2052、1033和1041这些数值，观察程序启动后界面的显示语言。
+
+字符串显示的国际化（多国语言显示）
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
