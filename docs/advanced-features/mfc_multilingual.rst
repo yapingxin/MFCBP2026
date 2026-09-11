@@ -404,6 +404,7 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 
 字符串值里含有 %s 占位符，作为字符串的显示格式。这样就能动态地构建多国语言显示的字符串。
 
+
 参考链接：
 
 #. `Multilingual User Interface <https://learn.microsoft.com/en-us/windows/win32/intl/multilingual-user-interface>`_
