@@ -147,4 +147,32 @@
 
 在 :numref:`操作：增加多国语言界面` :ref:`label-section-opt-create-multilingual-maindialog` 中，为演示程序创建了简体中文、英文和日文这 3 个不同显示语言的程序主窗体（对话框窗体），接下来，分别对这 3 个对话框窗体进行调整，使其控件布局合理。
 
-简体中文显示界面
+如 :numref:`fig_mfcmul_v0.2.0.1_S5_UI_Adjust_CHN` 所示，简体中文显示界面保持不变。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_13-03-57.png
+    :name: fig_mfcmul_v0.2.0.1_S5_UI_Adjust_CHN
+    :align: center
+
+    简体中文显示界面
+
+如 :numref:`fig_mfcmul_v0.2.0.1_S5_UI_Adjust_JPN` 所示，日文显示界面跟中文显示界面最接近，但是 label 文字也略有变长，所以将文字输入框整体右移。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_13-04-22.png
+    :name: fig_mfcmul_v0.2.0.1_S5_UI_Adjust_JPN
+    :align: center
+
+    日文显示界面
+
+如 :numref:`fig_mfcmul_v0.2.0.1_S5_UI_Adjust_ENU` 所示，英文显示界面的 label 文字变得很长，文字输入框右移得更远，而且还分割出来了靠右显示的参数名显示 Label。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_13-04-10.png
+    :name: fig_mfcmul_v0.2.0.1_S5_UI_Adjust_ENU
+    :align: center
+
+    英文显示界面
+
+对上述不同显示语言的界面分别作了调整，使它们各自都达到了合理的控件布局效果。
+
+运行多国语言界面
+^^^^^^^^^^^^^^^^^^^^
+
