@@ -196,24 +196,43 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 
 .. list-table:: 语言标识符列表
    :name: table_mfcmul_LangIdValuesTable
-   :widths: 10 18 18
+   :widths: 10 18
    :header-rows: 1
    :align: center
 
    * - LangId
      - 含义
-     - 宏定义
    * - 1024 (0x0400)
      - 用户默认语言及区域设置
-     - LANG_USER_DEFAULT
    * - 2052 (0x0804)
      - 简体中文
-     - MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT)
    * - 1033 (0x0409)
      - 英语（美国）
-     - MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT)
    * - 1041 (0x0411)
      - 日语（日本）
+
+也可以用 MAKELCID 宏定义来生成 LangId，如 :numref:`table_mfcmul_LangIdMacrosTable` 所示。
+
+.. list-table:: 生成语言标识符的宏
+   :name: table_mfcmul_LangIdMacrosTable
+   :widths: 2 18
+   :header-rows: 1
+   :align: center
+
+   * - LangId
+     - 宏定义
+   * - 1024
+     - LANG_USER_DEFAULT
+   * - 2052
+     - MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT)
+   * - 1033
+     - MAKELCID(MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US), SORT_DEFAULT)
+   * - 1041
      - MAKELCID(MAKELANGID(LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN), SORT_DEFAULT)
 
-【实验】
+【实验】在源代码 Source/MFC/VehUtil/Main/VehUtil.cpp 文件，函数 BOOL CVehUtilApp::InitInstance() 中，对话框窗体 CVehUtilDlg 创建并打开之前，插入以下代码，将当前线程的用户界面语言设置为简体中文：
+
+.. code-block:: c++
+
+    SetThreadUILanguage(MAKELCID(MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED), SORT_DEFAULT));
+
