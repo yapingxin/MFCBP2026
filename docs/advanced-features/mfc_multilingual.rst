@@ -306,7 +306,7 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
 固定字符串的国际化显示
 """"""""""""""""""""""""""""""""""""""
 
-在 MFC 资源的 String Table 中，新增一条定义：IDS_CUSTMSG_VEHSIM_MODEL_LOADED，如 :numref:`fig_mfcmul_v0.2.0.1_S7_STRTAB_1` 所示。
+【操作步骤1】在 MFC 资源的 String Table 中，新增一条定义：IDS_CUSTMSG_VEHSIM_MODEL_LOADED，如 :numref:`fig_mfcmul_v0.2.0.1_S7_STRTAB_1` 所示。
 
 .. figure:: Resource/images/Snipaste_2026-08-14_11-51-57.png
     :name: fig_mfcmul_v0.2.0.1_S7_STRTAB_1
@@ -327,3 +327,13 @@ LANGID 这种数据类型，实际上就是 uint16_t。如何给出我们期望�
     :align: center
 
     采用 String Table 中的定义显示字符串
+
+【操作步骤2】我们把 String Table 通过 Insert Copy 的方式复制出英文、日文的副本，并修改英文、日文副本的文字内容为相应的语种，如 :numref:`fig_mfcmul_v0.2.0.1_S8_STRTAB_4` 所示。
+
+.. figure:: Resource/images/Snipaste_2026-08-14_15-46-05.png
+    :name: fig_mfcmul_v0.2.0.1_S8_STRTAB_4
+    :align: center
+
+    创建和修改 IDS_CUSTMSG_VEHSIM_MODEL_LOADED 的不同语种的定义
+
+
